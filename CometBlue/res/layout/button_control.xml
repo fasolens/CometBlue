@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    
+    xmlns:app="http://schemas.android.com/apk/res/com.example.cometblue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp" 
+    xmlns:tools="http://schemas.android.com/tools"
+     tools:context="com.example.cometblue.DeviceControlActivity"
+    android:orientation="vertical" >
+    
+    <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         
+         android:layout_height="?attr/actionBarSize"
+		 android:background="?attr/colorPrimary"
+		 android:theme="@style/AppToolbarTheme"
+		 
+		 />
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+<com.example.cometblue.SpeedometerView
+    android:id="@+id/speedometer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" />
+
+<!--   <ImageButton -->
+<!--       android:id="@+id/newbutton" -->
+<!--       android:layout_width="wrap_content" -->
+<!--       android:layout_height="wrap_content" -->
+<!--       android:layout_alignBottom="@id/speedometer" -->
+<!--       android:layout_centerHorizontal="true" -->
+<!--       android:background="@null" -->
+<!--       android:clickable="true" -->
+<!--       android:onClick="onClickComet" -->
+<!--       android:src="@drawable/ic_refresh" /> -->
+
+ </RelativeLayout>
+<!-- <Button
+    android:id="@+id/buttonRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickComet"
+    android:text="@string/bt_refresh" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_weight="0.00" >
+        
+	<TextView
+	    android:id="@+id/takt_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+	    android:text="@string/actual"
+	    android:textSize="12sp" />
+	
+	<TextView
+	    android:id="@+id/takt_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignStart="@+id/takt_label"
+	    android:layout_below="@id/takt_label"
+	    android:layout_marginTop="-10dp"
+	    android:text="@string/no_data"
+	    android:textSize="35sp" />
+	
+	  <TextView
+	      android:id="@+id/ttgt_label"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentEnd="true"
+          
+            android:layout_marginEnd="90dp"
+            
+            android:layout_marginTop="7dp"
+	      android:text="@string/target"
+	      android:textSize="12sp" />
+	
+	   <TextView
+            android:id="@+id/ttgt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ttgt_label"
+	    	android:layout_below="@id/ttgt_label"
+	   		android:layout_marginTop="-10dp"
+            android:text="@string/no_data"
+			android:textSize="35sp"
+             />
+
+	   <TextView
+	       android:id="@+id/economy_label"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/ttgt_value"
+	       android:text="@string/economy"
+	       android:layout_alignStart="@+id/ttgt_value"
+	       android:textSize="10sp" />
+
+	   <TextView
+	       android:id="@+id/comfort_label"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_toEndOf="@id/economy_label"
+	       android:layout_below="@id/ttgt_value"
+	       android:layout_marginStart="10dp"
+	       android:text="@string/comfort"
+	       android:textSize="10sp" />
+	   
+	   <TextView
+	       android:id="@+id/economy_value"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignEnd="@+id/economy_label"
+	       android:layout_below="@id/economy_label"
+	       android:text="@string/no_data"
+	       android:textSize="12sp" />
+	   
+	   <TextView
+	       android:id="@+id/comfort_value"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignEnd="@+id/comfort_label"
+	       android:layout_below="@id/comfort_label"
+	       android:text="@string/no_data"
+	       android:textSize="12sp" />
+        
+  
+ </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+<View style="@style/Divider"/>
+<TextView
+	    android:id="@+id/set_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+	    android:text="@string/set_label"
+	    android:textSize="12sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_label"
+        android:layout_margin="10dp"
+        android:max="42"
+        android:progress="0"
+        android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/apptheme_scrubber_control_selector_holo_light" />
+
+
+     
+      <android.support.v7.widget.SwitchCompat
+          android:id="@+id/mySwitch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+          android:layout_below="@id/seekBar1"
+          android:checked="false"
+          android:text="Manual"
+          android:textColor="@color/hint_foreground_material_light"
+          android:textOff="Manual"
+          android:textOn="Auto"
+          app:showText="false" />
+      
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/mySwitch"
+          android:layout_centerInParent="true"
+          android:layout_marginStart="20dp"
+          android:onClick="onClickSet"
+          android:text="@string/set_temp" />
+     
+     </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" >
+
+          <TextView
+              android:id="@+id/status_value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="11dp"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="7dp"
+              android:text="@string/actual"
+              android:textSize="12sp" />
+
+          <ImageView
+              android:id="@+id/ic_battery"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginBottom="11dp"
+              android:layout_marginEnd="20dp"
+              android:layout_marginTop="-10dp"
+              android:rotation="-90"
+              android:src="@drawable/battery_0" />
+
+          <TextView
+              android:id="@+id/battery_value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@id/ic_battery"
+              android:layout_alignStart="@id/ic_battery"
+              android:text="@string/no_data"
+              android:textSize="15sp" />
+      </RelativeLayout>
+
+</LinearLayout>

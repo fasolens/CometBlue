@@ -1,0 +1,49 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   <style name="Base.Theme.CometBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        
+         <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorPrimaryDark">@color/my_primary_dark</item> 
+        <item name="android:textColorPrimary">@color/my_primary_text</item> 
+        <item name="android:textColorSecondary">@color/my_secondary_text</item> 
+        <item name="colorAccent">@color/my_accent</item>
+        
+        <item name="colorButtonNormal">@color/button_color</item>
+		<!--  
+        <item name="android:windowBackground">@color/window_background</item> 
+        <item name="android:textColor">@color/gray</item>  -->
+    </style>
+    
+   <style name="AppToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+       <item name="colorPrimary">@color/my_primary</item>
+       
+       <item name="android:textColorPrimary">@color/my_primary_text</item> 
+       <item name="android:textColorSecondary">@color/my_secondary_text</item> 
+       <item name="android:textColor">@color/my_primary_text</item>
+       <item name="android:colorBackground">@color/light_blue</item>
+       <item name="actionMenuTextColor">@color/my_primary_text</item>
+    
+</style>
+
+ <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">@color/my_primary</item>
+    <item name="android:textColorPrimary">#00FF00</item>
+    <!-- <item name="android:background">#5fa3d0</item> -->
+</style>
+
+   <style name="Divider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/light_gray</item>
+</style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Base.Theme.CometBlue">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
