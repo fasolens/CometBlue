@@ -29,6 +29,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Context;
+
+/**
+ * Blue Comet
+ *
+ * 
+ * @version 1.0
+ * @author humback@gmail.com
+ */
 public class MainActivity extends AppCompatActivity {
 	
 	
