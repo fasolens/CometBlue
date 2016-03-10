@@ -16,9 +16,9 @@
           android:orderInCategory="101"
           app:showAsAction="ifRoom|withText"/>
      <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_info"
         android:orderInCategory="102"
-        android:title="@string/action_settings"
+        android:title="@string/action_info"
         app:showAsAction="never"/>
 
 </menu>

@@ -256,10 +256,10 @@ public class DeviceControlActivity extends AppCompatActivity {
         	if (isChecked) {
 
         		tManual=1;
-        	Toast.makeText(getApplicationContext(), "manual", Toast.LENGTH_SHORT).show();
+        	//Toast.makeText(getApplicationContext(), "manual", Toast.LENGTH_SHORT).show();
         	} else {
         		tManual=0;
-        		Toast.makeText(getApplicationContext(), "auto", Toast.LENGTH_SHORT).show();
+        	//	Toast.makeText(getApplicationContext(), "auto", Toast.LENGTH_SHORT).show();
         	}
 
         	}
@@ -409,8 +409,8 @@ public class DeviceControlActivity extends AppCompatActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-            case R.id.action_settings:
-           	 Toast.makeText(this, R.string.not_available, Toast.LENGTH_SHORT).show();
+            case R.id.action_info:
+           	 Toast.makeText(this, R.string.info, Toast.LENGTH_LONG).show();
    	           
                break;
             case R.id.action_refresh:

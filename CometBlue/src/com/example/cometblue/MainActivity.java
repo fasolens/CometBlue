@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
         case R.id.menu_stop:
             scanLeDevice(false);
             break;
-        case R.id.action_settings:
-        	 Toast.makeText(this, R.string.not_available, Toast.LENGTH_SHORT).show();
+        case R.id.action_info:
+        	 Toast.makeText(this, R.string.info, Toast.LENGTH_LONG).show();
 	           
             break;
     }
