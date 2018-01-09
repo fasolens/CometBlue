@@ -149,3 +149,15 @@ W celach niekomercyjnych, możecie korzystać do woli, ale jak coś wymyślicie 
 ## Źródła, które wykorzystałem w aplikacji
 - [BLE](http://developer.android.com/guide/topics/connectivity/bluetooth-le.html)
 - ["licznik"](https://jetcracker.wordpress.com/2014/02/28/speedometer-gauge-with-needle-for-android/)
+
+## source
+
+[elektroda](https://www.elektroda.pl/rtvforum/topic3178274.html#15522271)
+
+## Future work
+- connect to [web](https://www.supla.org) [github](https://github.com/SUPLA)
+- connect to domoticz
+- [openhub](http://www.openhab.org)
+- [home assistant](https://home-assistant.io)
+- [iobroker](http://www.iobroker.net)
+
